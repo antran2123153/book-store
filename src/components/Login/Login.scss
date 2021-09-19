@@ -1,0 +1,43 @@
+@import "assets/styles/_mixins.scss";
+@import "assets/styles/_variables.scss";
+
+.login {
+  background-image: url("../../assets/images/login-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+
+  &__card {
+    width: 35%;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 3px;
+    background-color: $bg-white;
+
+    @include atLgScreen {
+      width: 90%;
+      padding: 30px 40px;
+    }
+
+    &-title {
+      text-align: center;
+    }
+
+    &-groupbtn {
+      margin-top: 30px;
+      display: flex;
+      color: $text-color;
+      justify-content: space-around;
+    }
+
+    &-btn {
+      color: $text-color;
+      padding: 5px 20px;
+    }
+
+    &-signup {
+      background-color: rgb(248, 219, 51);
+    }
+  }
+}

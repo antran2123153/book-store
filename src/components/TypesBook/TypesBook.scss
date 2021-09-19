@@ -1,0 +1,18 @@
+@import "assets/styles/_mixins.scss";
+
+.typesbook {
+  padding: 50px 0;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    @include atLgScreen {
+      display: list-item;
+    }
+  }
+}

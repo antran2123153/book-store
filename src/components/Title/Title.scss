@@ -1,0 +1,42 @@
+@import "assets/styles/_variables.scss";
+@import "assets/styles/_mixins.scss";
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .title__line {
+    background-color: rgb(94, 94, 94);
+    width: 20%;
+    height: 2px;
+
+    @include atLgScreen {
+      width: 10%;
+    }
+  }
+
+  .title__heading {
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+
+    & h3 {
+      font-size: 1.8rem;
+      font-weight: 500;
+
+      @include atLgScreen {
+        font-size: 1.2rem;
+      }
+    }
+
+    & p {
+      font-size: 1rem;
+      font-weight: 300;
+
+      @include atLgScreen {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

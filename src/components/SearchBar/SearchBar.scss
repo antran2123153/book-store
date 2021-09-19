@@ -1,0 +1,88 @@
+@import "assets/styles/_mixins.scss";
+@import "assets/styles/_variables.scss";
+
+.searchbar {
+  background-color: $bg-grey;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  @include atLgScreen {
+    padding: 15px 5px;
+  }
+}
+
+.searchbar__search {
+  display: flex;
+  justify-content: center;
+
+  &-input {
+    padding: 0 20px;
+    width: 50%;
+
+    @include atLgScreen {
+      width: 80%;
+    }
+  }
+
+  &-btn {
+    width: 10%;
+
+    @include atLgScreen {
+      width: 20%;
+    }
+  }
+}
+
+.searchbar__types {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+
+  & button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 185, 35);
+  }
+
+  @include atLgScreen {
+    display: block;
+    width: 100%;
+  }
+}
+
+.searchbar__links {
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  color: rgb(23, 128, 214);
+
+  @include atLgScreen {
+    width: 100%;
+  }
+}
+
+.currentsearch {
+  width: 60%;
+  margin: auto;
+
+  @include atLgScreen {
+    width: 100%;
+  }
+  &__links {
+    margin-top: 10px;
+  }
+
+  &__types {
+    margin-top: 10px;
+
+    & button {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: white;
+      color: black;
+    }
+  }
+}

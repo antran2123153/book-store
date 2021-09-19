@@ -1,0 +1,40 @@
+@import "assets/styles/mixins";
+@import "assets/styles/variables";
+
+.cardtype {
+  position: relative;
+  height: 22rem;
+  width: 20%;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: all 0.5s;
+  background-image: url("https://432351-1355220-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/chicago.jpg");
+
+  @include atLgScreen {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 5;
+  }
+
+  &__bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 5;
+    font-size: 13pt;
+  }
+}
+
+.cardtype:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
