@@ -19,9 +19,9 @@ function SearchBar(props) {
             </button>
           </div>
           <div className="searchbar__links">
-            <a href="#">Mountain Tales</a>, <a href="#">Mountain Tales</a>,{" "}
-            <a href="#">Mountain Tales</a>, <a href="#">Mountain Tales</a>,{" "}
-            <a href="#">Mountain Tales</a>, ......
+            <a href="/">Mountain Tales</a>, <a href="/">Mountain Tales</a>,{" "}
+            <a href="/">Mountain Tales</a>, <a href="/">Mountain Tales</a>,{" "}
+            <a href="/">Mountain Tales</a>, ......
           </div>
           <div className="searchbar__types">
             <button>Romantic</button>
