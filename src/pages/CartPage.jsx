@@ -1,17 +1,17 @@
+import { Cart } from "components";
 import React from "react";
 
 CartPage.propTypes = {};
 
 function CartPage(props) {
-  return <div></div>;
+  return (
+    <main>
+      <Cart />
+    </main>
+  );
 }
 
 export default CartPage;
-
-// import React from "react";
-// import { selectCart } from "features/cart/cartSlice";
-// import { useSelector } from "react-redux";
-// import CartItem from "components/Carts/CartItem";
 
 // export default function Cart() {
 //   const cartItems = useSelector(selectCart);

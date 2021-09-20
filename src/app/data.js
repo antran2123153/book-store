@@ -2,7 +2,7 @@ export const BOOKS = [
   {
     id: 1,
     hot: true,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -16,7 +16,7 @@ export const BOOKS = [
   {
     id: 2,
     hot: true,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -30,7 +30,7 @@ export const BOOKS = [
   {
     id: 3,
     hot: true,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -44,7 +44,7 @@ export const BOOKS = [
   {
     id: 4,
     hot: true,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -58,7 +58,7 @@ export const BOOKS = [
   {
     id: 5,
     hot: true,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -72,7 +72,7 @@ export const BOOKS = [
   {
     id: 6,
     hot: false,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -86,7 +86,7 @@ export const BOOKS = [
   {
     id: 7,
     hot: false,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -100,7 +100,7 @@ export const BOOKS = [
   {
     id: 8,
     hot: false,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -114,7 +114,7 @@ export const BOOKS = [
   {
     id: 9,
     hot: false,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],
@@ -128,7 +128,7 @@ export const BOOKS = [
   {
     id: 10,
     hot: false,
-    price: "125.000 VND",
+    price: 125000,
     title: "Mountain Tales",
     address: "2436 SW 8th St, Miami, FL 33135, USA",
     type: ["DRAMA", "ROMANTIC"],

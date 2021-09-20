@@ -1,0 +1,152 @@
+@import "assets/styles/_mixins.scss";
+@import "assets/styles/_variables.scss";
+
+.cart {
+  background-image: url("../../assets/images/login-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 100px 0;
+
+  @include atLgScreen {
+    padding: 50px 0;
+  }
+}
+
+.cart__flex {
+  display: flex;
+  justify-content: space-around;
+
+  @include atLgScreen {
+    display: block;
+  }
+}
+
+.cart__card {
+  background-color: $bg-white;
+  border-radius: 5px;
+  padding: 50px;
+  height: auto;
+
+  @include atLgScreen {
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.cart__books {
+  width: 60%;
+  border-collapse: collapse;
+  overflow: hidden;
+  display: block;
+
+  @include atLgScreen {
+    width: 100%;
+    font-size: 9pt;
+  }
+
+  & td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+    @include atLgScreen {
+      padding: 2px;
+    }
+  }
+
+  & tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+}
+
+.cart__books__item {
+  &-stt {
+    width: 2rem;
+  }
+
+  &-img {
+    width: 10%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &-name {
+    width: 40%;
+  }
+
+  &-price {
+    width: calc(30% - 50px - 2rem);
+  }
+
+  &-number {
+    width: 10%;
+  }
+
+  &-btn {
+    width: 50px;
+
+    @include atLgScreen {
+      width: 30px;
+    }
+
+    & button {
+      width: 100%;
+      margin: 0;
+      color: $text-color;
+      padding: 2px;
+
+      &:nth-child(1) {
+        background-color: rgb(0, 190, 204);
+        margin-bottom: 5px;
+      }
+
+      &:nth-child(2) {
+        background-color: rgb(255, 72, 0);
+      }
+    }
+  }
+}
+
+.cart__price {
+  width: 30%;
+  background-color: $bg-white;
+
+  @include atLgScreen {
+    width: 100%;
+    padding: 20px;
+  }
+
+  &-title {
+    text-align: center;
+  }
+
+  &-cost {
+    font-size: large;
+    font-weight: 500;
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: space-around;
+
+    & button {
+      width: 40%;
+      padding: 7px 0;
+      margin-top: 20px;
+
+      &:nth-child(1) {
+        background-color: rgb(204, 0, 0);
+      }
+
+      &:nth-child(2) {
+        background-color: rgb(0, 255, 13);
+      }
+    }
+  }
+}

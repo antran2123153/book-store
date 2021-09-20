@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 function HomePage(props) {
   const books = useSelector(selectBooks);
-
   const hotbook = books.filter((book) => book.hot === true);
 
   return (

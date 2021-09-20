@@ -8,6 +8,7 @@ import {
   LoginPage,
   RegisterPage,
   ProfilePage,
+  CartPage,
 } from "pages";
 import { Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -31,6 +32,8 @@ function App() {
           <Route exact path="/book/:id" component={BookPage} />
           {/* Profile page */}
           <Route exact path="/profile" component={ProfilePage} />
+          {/* Shopping cart page */}
+          <Route exact path="/cart" component={CartPage} />
           {/* Login page */}
           <Route exact path="/login" component={LoginPage} />
           {/* Register page */}

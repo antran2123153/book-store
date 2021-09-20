@@ -44,7 +44,7 @@ function CardBook(props) {
           <img src={imgDemo} alt="" className="cardbook__top-img" />
         </Link>
         {hot && <span className="cardbook__top-hot">HOT</span>}
-        <span className="cardbook__top-price">{price}</span>
+        <span className="cardbook__top-price">{price + " VND"}</span>
         {currentUser.username && (
           <span
             className="cardbook__top-get"

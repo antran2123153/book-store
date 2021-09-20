@@ -12,6 +12,7 @@ import AboutUs from "./AboutUs/AboutUs";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import SearchBar from "./SearchBar/SearchBar";
+import Cart from "./Cart/Cart";
 
 export {
   Navbar,
@@ -28,4 +29,5 @@ export {
   Login,
   Register,
   SearchBar,
+  Cart,
 };
