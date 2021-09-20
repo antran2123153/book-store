@@ -26,8 +26,8 @@
 .cart__card {
   background-color: $bg-white;
   border-radius: 5px;
-  padding: 50px;
-  height: auto;
+  padding: 20px;
+  height: 50%;
 
   @include atLgScreen {
     padding: 10px;
@@ -59,7 +59,7 @@
   }
 
   & tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #ffffff;
   }
 }
 
@@ -136,6 +136,7 @@
     justify-content: space-around;
 
     & button {
+      border-radius: 5px;
       width: 40%;
       padding: 7px 0;
       margin-top: 20px;
@@ -145,7 +146,8 @@
       }
 
       &:nth-child(2) {
-        background-color: rgb(0, 255, 13);
+        --tw-bg-opacity: 1;
+        background-color: rgba(14, 165, 233, var(--tw-bg-opacity));
       }
     }
   }

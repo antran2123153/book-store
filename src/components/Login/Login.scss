@@ -26,9 +26,9 @@
 
     &-groupbtn {
       margin-top: 30px;
-      display: flex;
       color: $text-color;
-      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
     }
 
     &-btn {
@@ -37,7 +37,7 @@
     }
 
     &-signup {
-      background-color: rgb(248, 219, 51);
+      background-color: rgb(102,153,204);
     }
   }
 }

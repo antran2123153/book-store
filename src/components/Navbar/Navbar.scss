@@ -8,7 +8,6 @@
   z-index: 111;
   background-color: $bg-white;
 }
-
 .navbar {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 100px 0;
@@ -18,14 +17,21 @@
 }
 
 .navbar__logo {
+  display: flex;
+  align-items: center;
   font-size: $title-size;
   font-weight: 500;
-
   @include atLgScreen {
     font-size: $header-size;
   }
+  & svg {
+    height: 3rem;
+    padding-bottom: 0.25rem;
+  }
 }
-
+.navbar__logo:hover{
+  color: rgb(0, 153, 255);
+}
 .navbar__links {
   display: flex;
   align-items: center;
@@ -38,7 +44,9 @@
 .navbar__link {
   margin: 0 10px;
 }
-
+.navbar__link:hover{
+  color: rgb(0, 153, 255);
+}
 .navbar__cart {
   margin: 0 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -54,12 +62,16 @@
     font-size: 9pt;
     font-weight: 600;
     border-radius: 50%;
-    padding: 4px 5px;
-    background-color: rgb(251, 255, 0);
+    padding: 3px 7px;
+    color: white;
+    background-color: red;
   }
 }
-
+.navbar__cart:hover{
+  color: rgb(0, 153, 255);
+}
 .navbar__btn {
+  border-radius: 5px;
   padding: 5px 20px;
   color: $text-color;
 }
@@ -88,7 +100,9 @@
     font-weight: 600;
   }
 }
-
+.navbar__user:hover{
+  color:rgb(0, 153, 255);
+}
 .navbar__hidden {
   display: none;
   transition: all 0.3s;

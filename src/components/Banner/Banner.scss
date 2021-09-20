@@ -11,14 +11,22 @@
   background-size: cover;
   color: $text-color;
 }
+.banner::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background-color: rgba(0,0,0,.5);
+}
 .banner__header {
   margin-top: 4rem;
-
+  position: relative;
   @include atLgScreen {
     margin-top: 0;
   }
 }
 .banner__text {
+  position: relative;
   width: 60%;
   display: block;
   margin: auto;
@@ -53,6 +61,7 @@
     }
   }
   &-btn {
+    border-radius: 5px;
     width: 15%;
     color: $text-color;
     height: 2.5rem;

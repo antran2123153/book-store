@@ -11,7 +11,7 @@ function CardTypesBook(props) {
         <h2 className="cardtype__top-name">{name}</h2>
       </div>
       <div className="cardtype__bot">
-        <Link to={path}>MORE DETAIL</Link>
+        <Link to={path}><button>MORE DETAILS</button></Link>
       </div>
     </div>
   );

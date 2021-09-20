@@ -14,7 +14,7 @@ function Banner(props) {
         <h3 className="banner__header">{BANNER_HOME.title}</h3>
         <p className="banner__text">{BANNER_HOME.text}</p>
         <div className="banner__search">
-          <h5 className="banner__search-text">{BANNER_HOME.searchTitle}</h5>
+          <h5 className="">{BANNER_HOME.searchTitle}</h5>
           <input
             type="text"
             className="banner__search-input"

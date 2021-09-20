@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./tailwind.css"
 import { Footer, Navbar, ScrollToTop } from "components";
 import {
   BookPage,
@@ -29,7 +30,7 @@ function App() {
           {/* List of all books in the store */}
           <Route exact path="/books" component={ListBookPage} />
           {/* View book details */}
-          <Route exact path="/book/:id" component={BookPage} />
+          <Route path="/book/:id" component={BookPage} />
           {/* Profile page */}
           <Route exact path="/profile" component={ProfilePage} />
           {/* Shopping cart page */}

@@ -10,6 +10,7 @@
   overflow: hidden;
   transition: all 0.5s;
   background-image: url("https://432351-1355220-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/chicago.jpg");
+  background-size: cover;
 
   @include atLgScreen {
     width: 90%;
@@ -28,10 +29,18 @@
   &__bot {
     position: absolute;
     bottom: 0;
-    left: 0;
     padding: 20px;
     z-index: 5;
     font-size: 13pt;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    & button{
+      border-radius: 5px;
+      font-weight:500;
+      background-color: white;
+      color: rgb(0, 153, 255);
+    }
   }
 }
 

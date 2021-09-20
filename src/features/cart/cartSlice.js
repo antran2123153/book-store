@@ -1,4 +1,4 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice} from "@reduxjs/toolkit";
 export const cartSlice = createSlice({
     name: 'cart',
     initialState: {
@@ -7,33 +7,26 @@ export const cartSlice = createSlice({
     reducers: {
         addCart: (state, action) => {
             if (state.cart.length===0) {
-                const newCart = [{ item: action.payload, number: 1 }];
-                state.cart = newCart;            }
+                state.cart = [{ item: action.payload, number: 1 }];          }
             else {
-                const data = current(state.cart);
-                const num = data.filter((x) => (x.item.id === action.payload.id)).length;
+                const num = state.cart.filter((x) => (x.item.id === action.payload.id)).length;
                 if (num === 0) {
                     const newItem = { item: action.payload, number: 1 };
                     state.cart.push(newItem);
                 }
                 else {
-                    const index = data.findIndex((x) => (x.item.id === action.payload.id));
-                    const newCart = state.cart;
-                    newCart[index].number++;
-                    state.cart = newCart;
+                    const index = state.cart.findIndex((x) => (x.item.id === action.payload.id));
+                    state.cart[index].number++;
                 }
             }
         },
         removeCart: (state, action) => {
-            const data = current(state.cart);
-            const index = data.findIndex((x) => (x.item.id === action.payload.id));
-            if (data[index].number === 1) {
+            const index = state.cart.findIndex((x) => (x.item.id === action.payload.id));
+            if (state.cart[index].number === 1) {
                 state.cart.splice(index,1);
             }
             else {
-                const newCart = state.cart;
-                newCart[index].number--;
-                state.cart = newCart;
+                state.cart[index].number--;
             }
         },
         resetCart: (state, action) => {
