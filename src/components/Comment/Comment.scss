@@ -15,7 +15,10 @@
   }
 
   &__content {
-    padding: 0 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: $bg-grey;
+    border-radius: 5px;
 
     &-title {
       font-size: large;
