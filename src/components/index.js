@@ -13,6 +13,8 @@ import Login from "./Login/Login";
 import Register from "./Register/Register";
 import SearchBar from "./SearchBar/SearchBar";
 import Cart from "./Cart/Cart";
+import Comment from "./Comment/Comment";
+import BookDetail from "./BookDetail/BookDetail";
 
 export {
   Navbar,
@@ -30,4 +32,6 @@ export {
   Register,
   SearchBar,
   Cart,
+  BookDetail,
+  Comment,
 };

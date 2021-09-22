@@ -8,7 +8,7 @@ function Banner(props) {
       <div
         className="banner"
         style={{
-          backgroundImage: `url('${BANNER_HOME.background}')`,
+          backgroundImage: `url(${BANNER_HOME.img})`,
         }}
       >
         <h3 className="banner__header">{BANNER_HOME.title}</h3>

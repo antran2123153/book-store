@@ -19,12 +19,11 @@ function CardBook(props) {
 
   const currentBook = props.book;
 
-  const { hot, price, title, type, author, time, imgDemo, description } =
+  const { id, hot, price, title, type, author, time, imgDemo, description } =
     currentBook;
   const typeField = type.join(", ");
-  // console.log(typeField);
 
-  const url = "/product/:id";
+  const url = "/book/" + id;
 
   return (
     <div className="cardbook">

@@ -1,0 +1,29 @@
+@import "assets/styles/_mixins.scss";
+@import "assets/styles/_variables.scss";
+
+.comment {
+  margin-bottom: 20px;
+  display: flex;
+
+  &__avt {
+    width: 6rem;
+    margin-top: 5px;
+
+    @include atLgScreen {
+      width: 20rem;
+    }
+  }
+
+  &__content {
+    padding: 0 20px;
+
+    &-title {
+      font-size: large;
+      font-weight: 500;
+    }
+
+    &-mess {
+      color: grey;
+    }
+  }
+}

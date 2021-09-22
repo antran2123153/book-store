@@ -21,8 +21,7 @@ export const BANNER_HOME = {
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, accusantium porro itaque tempore error iure. Ad vitae numquam repellat nihil, explicabo vero soluta culpa, eveniet pariatur, praesentium laudantium delectus nostrum.",
   searchTitle: "Search book",
   searchInput: "Name or type of book ...",
-  background:
-    "https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+  img: require("assets/images/banner-bg.png").default,
 };
 
 export const TYPES_BOOK = [
@@ -55,7 +54,7 @@ export const TYPES_BOOK = [
 export const ABOUT_US = [
   {
     id: 1,
-    img: "https://lh3.googleusercontent.com/proxy/Nu7fZYDItGnJtDgLu1AVhJL2qAotZYFjTKMc31281RbELdTyN0uDrmPmGOpBAloGSrYK5b4qp12TQdnVs03OinugoZ1YvfqnqTsnf8TzNA",
+    img: require("assets/images/avt-about-us.png").default,
     name: "Brittany Watkins",
     title: "Company American",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus portajusto eget risus consectetur,...",
@@ -63,7 +62,8 @@ export const ABOUT_US = [
   },
   {
     id: 2,
-    img: "https://lh3.googleusercontent.com/proxy/Nu7fZYDItGnJtDgLu1AVhJL2qAotZYFjTKMc31281RbELdTyN0uDrmPmGOpBAloGSrYK5b4qp12TQdnVs03OinugoZ1YvfqnqTsnf8TzNA",
+    img: require("assets/images/avt-about-us.png").default,
+
     name: "Brittany Watkins",
     title: "Company American",
 
@@ -72,7 +72,8 @@ export const ABOUT_US = [
   },
   {
     id: 3,
-    img: "https://lh3.googleusercontent.com/proxy/Nu7fZYDItGnJtDgLu1AVhJL2qAotZYFjTKMc31281RbELdTyN0uDrmPmGOpBAloGSrYK5b4qp12TQdnVs03OinugoZ1YvfqnqTsnf8TzNA",
+    img: require("assets/images/avt-about-us.png").default,
+
     name: "Brittany Watkins",
     title: "Company American",
 
@@ -81,7 +82,8 @@ export const ABOUT_US = [
   },
   {
     id: 4,
-    img: "https://lh3.googleusercontent.com/proxy/Nu7fZYDItGnJtDgLu1AVhJL2qAotZYFjTKMc31281RbELdTyN0uDrmPmGOpBAloGSrYK5b4qp12TQdnVs03OinugoZ1YvfqnqTsnf8TzNA",
+    img: require("assets/images/avt-about-us.png").default,
+
     name: "Brittany Watkins",
     title: "Company American",
 
@@ -90,7 +92,8 @@ export const ABOUT_US = [
   },
   {
     id: 5,
-    img: "https://lh3.googleusercontent.com/proxy/Nu7fZYDItGnJtDgLu1AVhJL2qAotZYFjTKMc31281RbELdTyN0uDrmPmGOpBAloGSrYK5b4qp12TQdnVs03OinugoZ1YvfqnqTsnf8TzNA",
+    img: require("assets/images/avt-about-us.png").default,
+
     name: "Brittany Watkins",
     title: "Company American",
 

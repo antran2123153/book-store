@@ -1,9 +1,12 @@
+import { BookDetail } from "components";
 import React from "react";
 
-BookPage.propTypes = {};
-
 function BookPage(props) {
-  return <div></div>;
+  return (
+    <main>
+      <BookDetail />
+    </main>
+  );
 }
 
 export default BookPage;

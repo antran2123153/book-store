@@ -1,0 +1,104 @@
+@import "assets/styles/_mixins.scss";
+@import "assets/styles/_variables.scss";
+
+.bg-bookdetail {
+  background-color: $bg-grey;
+  padding: 100px;
+
+  @include atLgScreen {
+    padding: 0;
+  }
+}
+.bookdetail {
+  background-color: $bg-white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  @include atLgScreen {
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.bookdetail__banner {
+  display: flex;
+  padding: 20px 100px;
+
+  &-img {
+    width: 20%;
+  }
+
+  @include atLgScreen {
+    display: block;
+    padding: 0;
+
+    &-img {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+.bookdetail__banner-title {
+  padding: 0 50px;
+
+  @include atLgScreen {
+    padding: 0;
+  }
+
+  &-name {
+    display: flex;
+
+    @include atLgScreen {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  &-star {
+    display: flex;
+    color: rgb(255, 255, 0);
+    font-size: 20pt;
+    margin-bottom: 10px;
+  }
+
+  &-btn {
+    margin-top: 10px;
+  }
+}
+
+.bookdetail__body {
+  padding: 20px 0;
+}
+
+.bookdetail__comment {
+  padding: 20px 0;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+
+    & button {
+      background-color: rgb(0, 255, 13);
+    }
+  }
+
+  &-list {
+    padding: 20px 50px;
+    @include atLgScreen {
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+
+  &-morebtn {
+    display: flex;
+    justify-content: center;
+
+    & button {
+      background-color: rgb(255, 208, 0);
+    }
+  }
+}

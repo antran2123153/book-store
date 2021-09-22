@@ -7,7 +7,7 @@ function ListBookPage() {
   const [visible, setVisible] = useState(8);
   const books = useSelector(selectBooks);
 
-  const showMoreProducts = () => {
+  const showMore = () => {
     setVisible((oldValue) => oldValue + 4);
   };
 
@@ -43,7 +43,7 @@ function ListBookPage() {
               className="col-10 mx-auto pt-3"
             >
               <hr />
-              <button onClick={showMoreProducts} className="mb-5">
+              <button onClick={showMore} className="mb-5">
                 Show more
               </button>
             </div>
